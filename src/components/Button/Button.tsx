@@ -9,7 +9,7 @@ function Button({ text }: Button) {
   return (
     <button className={style.button}>
       <Zoom />
-      {text}
+      <p>{text}</p>
     </button>
   );
 }

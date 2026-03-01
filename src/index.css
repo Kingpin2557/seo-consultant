@@ -1,6 +1,7 @@
 :root {
     --action: hsla(0, 0%, 0%, 1);
     --logo: hsla(0, 0%, 0%, 1);
+    --border: hsla(0, 0%, 0%, 1);
 
     --text-dark: hsla(0, 2%, 16%, 1);
     --text-light: hsla(0, 0%, 100%, 1);
@@ -13,11 +14,28 @@
     --gap: 0.8125rem;
 
     --border-radius: 0.1875rem;
+
+    --h1-size: 3.375rem;
+    --p-size: 1.25rem;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(0, 1fr);
+    grid-auto-rows: minmax(0, 1fr);
+
+    height: 800px;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    padding-block: var(--padding-block);
+
+    border-bottom: 1px solid var(--border);
 }
 
 a {
@@ -26,5 +44,16 @@ a {
 }
 
 ul {
+    display: flex;
+    gap: var(--gap);
+
     width: fit-content;
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
 }
