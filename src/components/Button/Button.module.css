@@ -3,6 +3,8 @@
     gap: var(--gap);
     align-items: center;
 
+    width: fit-content;
+
     background-color: var(--action);
 
     color: var(--text-light);
@@ -10,4 +12,22 @@
     border-radius: var(--border-radius);
     padding-block: var(--padding-block);
     padding-inline: var(--padding-inline);
+
+    border: 1px solid var(--action);
+
+    transition:
+        background-color,
+        border 0.3s ease-in-out;
+
+    &:hover {
+        background-color: var(--background-light);
+        color: var(--text-dark);
+        border: 1px solid var(--action);
+
+        cursor: pointer;
+
+        transition:
+            background-color,
+            border 0.3s ease-in-out;
+    }
 }

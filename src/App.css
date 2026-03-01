@@ -1,16 +1,5 @@
-:root {
-    --action: hsla(0, 0%, 0%, 1);
-    --logo: hsla(0, 0%, 0%, 1);
-
-    --text-dark: hsla(0, 2%, 16%, 1);
-    --text-light: hsla(0, 0%, 100%, 1);
-
-    --bacground-dark: hsla(0, 0%, 100%, 1);
-    --background-light: hsla(0, 0%, 100%, 1);
-
-    --padding-block: 1.125rem;
-    --padding-inline: 1.75rem;
-    --gap: 0.8125rem;
-
-    --border-radius: 0.1875rem;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
