@@ -1,0 +1,11 @@
+.navitem {
+    transition: text-decuration 0.3s ease-in-out;
+    &:hover {
+        text-decoration: line-through;
+        transition: text-decuration 0.3s ease-in-out;
+    }
+}
+
+.navitem--active {
+    text-decoration: line-through;
+}
