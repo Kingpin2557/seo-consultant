@@ -1,0 +1,13 @@
+.button {
+    display: flex;
+    gap: var(--gap);
+    align-items: center;
+
+    background-color: var(--action);
+
+    color: var(--text-light);
+
+    border-radius: var(--border-radius);
+    padding-block: var(--padding-block);
+    padding-inline: var(--padding-inline);
+}
